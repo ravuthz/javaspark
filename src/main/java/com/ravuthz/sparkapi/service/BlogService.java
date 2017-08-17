@@ -13,7 +13,7 @@ import java.util.List;
  * Email : ravuthz@gmail.com
  */
 public class BlogService {
-    MongoClient client = new MongoClient("localhost", 27007);
+    MongoClient client = new MongoClient("localhost", 27000);
     Datastore datastore = new Morphia().createDatastore(client, "blog");
 
     public boolean addPost(Blog blog) {
